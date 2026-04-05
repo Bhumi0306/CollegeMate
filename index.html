@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CollegeMate – Smart College Life Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎓 CollegeMate</h1>
+    <p>Smart College Life Manager</p>
+</header>
+
+<section class="dashboard">
+
+    <!-- Timetable -->
+    <div class="card">
+        <h2>📅 Timetable</h2>
+        <input type="text" id="subject" placeholder="Subject Name">
+        <input type="text" id="time" placeholder="Time">
+        <button onclick="addTimetable()">Add</button>
+        <ul id="timetableList"></ul>
+    </div>
+
+    <!-- Attendance -->
+    <div class="card">
+        <h2>📊 Attendance</h2>
+        <input type="number" id="totalClasses" placeholder="Total Classes">
+        <input type="number" id="attendedClasses" placeholder="Attended Classes">
+        <button onclick="calculateAttendance()">Calculate</button>
+        <p id="attendanceResult"></p>
+
+        <h4>📅 Attendance History</h4>
+        <ul id="attendanceHistory"></ul>
+    </div>
+
+    <!-- Assignments -->
+    <div class="card">
+        <h2>📝 Assignments</h2>
+        <input type="text" id="assignment" placeholder="Assignment Name">
+        <input type="date" id="deadline">
+        <button onclick="addAssignment()">Add</button>
+        <ul id="assignmentList"></ul>
+    </div>
+
+    <!-- Todo -->
+    <div class="card">
+        <h2>✅ To-Do / Notes</h2>
+        <input type="text" id="todo" placeholder="Write note">
+        <button onclick="addTodo()">Add</button>
+        <ul id="todoList"></ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 CollegeMate | HTML • CSS • JavaScript</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
